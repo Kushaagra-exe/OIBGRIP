@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="/static/temp.css">
+    
+    <link rel="icon" type="image/x-icon" href="thermometer.png">
+</head> 
+<body class="design">
+    
+    <div>
+        <header>Temperature Converter </header> <hr>
+        <p>This Website Converts Temperature between Fahrenheit, Celsius and Kelvin
+        <br>
+        <b>Technologies used:</b> </p>
+        
+    </div>
+    <br>
+    <div>
+        <center class="input">
+            <strong><u><pre>Enter Temperature:</pre></u></strong>
+            <form action="#" method="post">
+                <input type="number" name="num" step="0.1">
+                <br><br>
+                <label for="temp">Choose units</label>
+                <select name="temp">
+                    <option value="F">Fahrenheit</option>
+                    <option value="C">Celsius</option>
+                    <option value="K">Kelvin</option>
+
+                </select>
+
+                <input type="submit" value="Calculate">
+            </form>
+        </center>
+        
+    </div>
+
+    <div>
+        {% block output %}
+
+        {% endblock %}
+    </div>
+
+</body>
+</html>
